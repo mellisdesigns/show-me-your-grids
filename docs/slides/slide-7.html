@@ -1,0 +1,55 @@
+<section>
+  <h2>Grid Template Area</h2>
+  <p>Names make so much more sense</p>
+</section>
+
+<section>
+  <h4>Grids with numbers</h4>
+  <p>When you understand the fundamentals of how grid works, grid template areas provides so much subject definition to your grid</p>
+  <pre>
+    <code>
+      <style>
+        .grid {
+          display: grid;
+          grid: repeat(3, 1fr) / repeat(3, 1fr)
+        }
+      </style>
+
+      <div class="grid">
+        <div>header</div>
+        <div>nav</div>
+        <div>main</div>
+      </div>
+    </code>
+  </pre>
+</section>
+
+<section>
+    <pre>
+      <code>
+        <style>
+          .grid {
+            display: grid;
+            grid: auto / auto;
+            grid-template-areas:
+              "header header header"
+              "nav main main";
+          }
+          .header { grid-area: header; }
+          .nav { grid-area: nav; }
+          .main { grid-area: main; }
+        </style>
+  
+        <div class="grid">
+          <div class="header"></div>
+          <div class="nav"></div>
+          <div class="main"></div>
+        </div>
+      </code>
+    </pre>
+</section>
+
+<section>
+  <h4>Demo Time?</h4>
+</section>
+

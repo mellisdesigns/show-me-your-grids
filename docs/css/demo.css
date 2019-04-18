@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-gap: 5px;
+}
+.grid-item {
+  padding: 20px;
+  background-color: #444444;
+  color: white;
+}
+
+.grid__with-areas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "ad header header header ad"
+    "ad sidebar content content ad"
+    "footer footer footer footer footer" 
+}

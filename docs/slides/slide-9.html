@@ -1,0 +1,47 @@
+<section>
+  <h2>Overly Complex Shorthand</h2>
+  <p>Why define properties, when you can use one line!</p>
+</section>
+
+<section>
+  <pre>
+    <code>
+      .grid {
+        grid: 100px 300px / 3fr 1fr;
+      }
+    </code>
+  </pre>
+  <p>same as ...</p>
+  <pre>
+      <code>
+        .grid {
+          grid-template-rows: 100px 300px;
+          grid-template-columns: 3fr 1fr;
+        }
+      </code>
+    </pre>
+</section>
+
+<section>
+    <pre>
+      <code>
+        .grid {
+          grid: [row1-start] "header header header" 1fr [row1-end]
+                [row2-start] "footer footer footer" 25px [row2-end]
+                / auto 50px auto;
+        }
+      </code>
+    </pre>
+    <p>same as ...</p>
+    <pre>
+        <code>
+          .grid {
+            grid-template-areas: 
+              "header header header"
+              "footer footer footer";
+            grid-template-rows: [row1-start] 1fr [row1-end row2-start] 25px [row2-end];
+            grid-template-columns: auto 50px auto;
+          }
+        </code>
+      </pre>
+  </section>
